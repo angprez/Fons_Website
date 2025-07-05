@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - FONS Marketing</title>
+    <meta name="description" content="Meet the creative minds behind FONS Marketing. Learn about our story, values, and the passionate team driving innovation in digital marketing.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="About Us - FONS Marketing">
+    <meta property="og:description" content="Meet the creative minds behind FONS Marketing and learn our story.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="index.html" class="nav__logo">
+                    <div class="logo-3d" id="navLogo"></div>
+                    <span>FONS</span>
+                </a>
+            </div>
+            
+            <div class="nav__menu" id="navMenu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link active">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="services.html" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="portfolio.html" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav__actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-toggle__icon"></span>
+                </button>
+                <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero hero--about">
+            <div class="hero__background">
+                <div class="hero__3d" id="aboutHero3D"></div>
+            </div>
+            
+            <div class="hero__content container">
+                <div class="hero__text">
+                    <h1 class="hero__title">
+                        <span class="hero__title-line">Meet the Creative</span>
+                        <span class="hero__title-line hero__title-line--accent">Minds Behind FONS</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        We're a passionate team of strategists, designers, and innovators 
+                        dedicated to transforming brands and driving meaningful growth.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="our-story section" id="ourStory">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Our Story</h2>
+                    <p class="section__subtitle">
+                        From humble beginnings to industry leaders, discover the journey 
+                        that shaped FONS Marketing into the creative powerhouse it is today.
+                    </p>
+                </div>
+                
+                <div class="story-timeline">
+                    <svg class="story-timeline__path" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+                        <path id="storyPath" d="M50,350 Q200,50 400,200 T750,100" stroke="url(#gradient)" stroke-width="3" fill="none" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#6B46C1"/>
+                                <stop offset="50%" style="stop-color:#8B5CF6"/>
+                                <stop offset="100%" style="stop-color:#C084FC"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    
+                    <div class="story-timeline__events">
+                        <div class="story-event" data-aos="fade-up" data-aos-delay="100">
+                            <div class="story-event__year">2018</div>
+                            <div class="story-event__content">
+                                <h3 class="story-event__title">The Beginning</h3>
+                                <p class="story-event__description">
+                                    Founded by three passionate marketers with a vision to revolutionize 
+                                    how brands connect with their audiences.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="story-event" data-aos="fade-up" data-aos-delay="200">
+                            <div class="story-event__year">2019</div>
+                            <div class="story-event__content">
+                                <h3 class="story-event__title">First Major Win</h3>
+                                <p class="story-event__description">
+                                    Landed our first Fortune 500 client and delivered a campaign 
+                                    that increased their brand awareness by 340%.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="story-event" data-aos="fade-up" data-aos-delay="300">
+                            <div class="story-event__year">2021</div>
+                            <div class="story-event__content">
+                                <h3 class="story-event__title">Award Recognition</h3>
+                                <p class="story-event__description">
+                                    Won our first industry award for "Most Innovative Digital Campaign" 
+                                    at the Marketing Excellence Awards.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="story-event" data-aos="fade-up" data-aos-delay="400">
+                            <div class="story-event__year">2023</div>
+                            <div class="story-event__content">
+                                <h3 class="story-event__title">Global Expansion</h3>
+                                <p class="story-event__description">
+                                    Expanded internationally with offices in London and Singapore, 
+                                    serving clients across three continents.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="story-event" data-aos="fade-up" data-aos-delay="500">
+                            <div class="story-event__year">2024</div>
+                            <div class="story-event__content">
+                                <h3 class="story-event__title">Innovation Lab</h3>
+                                <p class="story-event__description">
+                                    Launched our Innovation Lab, pioneering AI-driven marketing 
+                                    solutions and immersive brand experiences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team section" id="team">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Meet Our Team</h2>
+                    <p class="section__subtitle">
+                        The creative minds and strategic thinkers who bring your brand vision to life.
+                    </p>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-card hover-tilt" data-aos="fade-up" data-aos-delay="100">
+                        <div class="team-card__avatar">
+                            <img src="/placeholder.svg?height=120&width=120" alt="Sarah Chen" loading="lazy">
+                        </div>
+                        <h3 class="team-card__name">Sarah Chen</h3>
+                        <p class="team-card__role">Founder & Creative Director</p>
+                        <p class="team-card__bio">
+                            With 15+ years in brand strategy, Sarah leads our creative vision 
+                            and ensures every campaign tells a compelling story.
+                        </p>
+                        <div class="team-card__social">
+                            <a href="#" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Twitter">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card hover-tilt" data-aos="fade-up" data-aos-delay="200">
+                        <div class="team-card__avatar">
+                            <img src="/placeholder.svg?height=120&width=120" alt="Marcus Rodriguez" loading="lazy">
+                        </div>
+                        <h3 class="team-card__name">Marcus Rodriguez</h3>
+                        <p class="team-card__role">Head of Strategy</p>
+                        <p class="team-card__bio">
+                            Marcus combines data-driven insights with creative thinking to develop 
+                            strategies that deliver measurable results.
+                        </p>
+                        <div class="team-card__social">
+                            <a href="#" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Twitter">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card hover-tilt" data-aos="fade-up" data-aos-delay="300">
+                        <div class="team-card__avatar">
+                            <img src="/placeholder.svg?height=120&width=120" alt="Emily Watson" loading="lazy">
+                        </div>
+                        <h3 class="team-card__name">Emily Watson</h3>
+                        <p class="team-card__role">Lead UX/UI Designer</p>
+                        <p class="team-card__bio">
+                            Emily crafts beautiful, intuitive experiences that engage users 
+                            and drive conversions across all digital touchpoints.
+                        </p>
+                        <div class="team-card__social">
+                            <a href="#" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Dribbble">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card hover-tilt" data-aos="fade-up" data-aos-delay="400">
+                        <div class="team-card__avatar">
+                            <img src="/placeholder.svg?height=120&width=120" alt="David Kim" loading="lazy">
+                        </div>
+                        <h3 class="team-card__name">David Kim</h3>
+                        <p class="team-card__role">Analytics Director</p>
+                        <p class="team-card__bio">
+                            David transforms complex data into actionable insights that guide 
+                            our strategic decisions and optimize campaign performance.
+                        </p>
+                        <div class="team-card__social">
+                            <a href="#" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Twitter">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card hover-tilt" data-aos="fade-up" data-aos-delay="500">
+                        <div class="team-card__avatar">
+                            <img src="/placeholder.svg?height=120&width=120" alt="Lisa Thompson" loading="lazy">
+                        </div>
+                        <h3 class="team-card__name">Lisa Thompson</h3>
+                        <p class="team-card__role">Content Strategist</p>
+                        <p class="team-card__bio">
+                            Lisa creates compelling narratives that resonate with audiences 
+                            and build lasting connections between brands and customers.
+                        </p>
+                        <div class="team-card__social">
+                            <a href="#" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Medium">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card hover-tilt" data-aos="fade-up" data-aos-delay="600">
+                        <div class="team-card__avatar">
+                            <img src="/placeholder.svg?height=120&width=120" alt="Alex Johnson" loading="lazy">
+                        </div>
+                        <h3 class="team-card__name">Alex Johnson</h3>
+                        <p class="team-card__role">Technical Lead</p>
+                        <p class="team-card__bio">
+                            Alex ensures our digital solutions are cutting-edge, scalable, 
+                            and deliver exceptional performance across all platforms.
+                        </p>
+                        <div class="team-card__social">
+                            <a href="#" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values section" id="values">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Our Values</h2>
+                    <p class="section__subtitle">
+                        The principles that guide everything we do and shape how we work with our clients.
+                    </p>
+                </div>
+                
+                <div class="values-grid">
+                    <div class="value-card hover-tilt" data-aos="fade-up" data-aos-delay="100">
+                        <div class="value-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Excellence</h3>
+                        <p class="value-card__description">
+                            We strive for perfection in every project, delivering work that exceeds 
+                            expectations and sets new industry standards.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card hover-tilt" data-aos="fade-up" data-aos-delay="200">
+                        <div class="value-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Innovation</h3>
+                        <p class="value-card__description">
+                            We embrace cutting-edge technologies and creative approaches to solve 
+                            complex challenges and drive breakthrough results.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card hover-tilt" data-aos="fade-up" data-aos-delay="300">
+                        <div class="value-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Collaboration</h3>
+                        <p class="value-card__description">
+                            We believe the best results come from working closely with our clients 
+                            as true partners in their success journey.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card hover-tilt" data-aos="fade-up" data-aos-delay="400">
+                        <div class="value-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Integrity</h3>
+                        <p class="value-card__description">
+                            Transparency, honesty, and ethical practices form the foundation 
+                            of every relationship and decision we make.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Ready to Work Together?</h2>
+                    <p class="cta__subtitle">
+                        Let's create something extraordinary. Get in touch to start your journey with FONS.
+                    </p>
+                    <div class="cta__actions">
+                        <a href="contact.html" class="btn btn--primary btn--large">
+                            Start Your Project
+                            <span class="btn__icon">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <div class="logo-3d" id="footerLogo"></div>
+                        <span>FONS</span>
+                    </div>
+                    <p class="footer__description">
+                        The source of creative growth for forward-thinking brands.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Services</h4>
+                        <ul class="footer__list">
+                            <li><a href="services.html">Brand Strategy</a></li>
+                            <li><a href="services.html">Digital Campaigns</a></li>
+                            <li><a href="services.html">UX/UI Design</a></li>
+                            <li><a href="services.html">Analytics</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Company</h4>
+                        <ul class="footer__list">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Newsletter</h4>
+                        <p class="footer__newsletter-text">
+                            Stay updated with our latest insights and trends.
+                        </p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                            <button type="submit" class="newsletter-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2024 FONS Marketing. All rights reserved.
+                </p>
+                <div class="footer__legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/3d-animations.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        // About page specific animations
+        document.addEventListener('DOMContentLoaded', () => {
+            // Animate story path
+            const storyPath = document.getElementById('storyPath');
+            if (storyPath) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            storyPath.style.animation = 'drawPath 3s ease-in-out forwards';
+                        }
+                    });
+                });
+                observer.observe(storyPath);
+            }
+        });
+        
+        // Add CSS for path animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes drawPath {
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+            
+            .hero--about {
+                min-height: 60vh;
+            }
+            
+            .story-timeline {
+                position: relative;
+                margin: 4rem 0;
+            }
+            
+            .story-timeline__path {
+                width: 100%;
+                height: 400px;
+                margin-bottom: 2rem;
+            }
+            
+            .story-timeline__events {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+            }
+            
+            .story-event {
+                text-align: center;
+                padding: 2rem;
+                background: var(--color-white);
+                border-radius: var(--radius-xl);
+                box-shadow: var(--shadow-md);
+                border: 1px solid var(--color-gray-200);
+                transition: all var(--transition-base);
+            }
+            
+            .story-event:hover {
+                transform: translateY(-8px);
+                box-shadow: var(--shadow-xl);
+            }
+            
+            .story-event__year {
+                font-size: var(--font-size-2xl);
+                font-weight: var(--font-weight-bold);
+                color: var(--color-primary);
+                margin-bottom: 1rem;
+            }
+            
+            .story-event__title {
+                font-size: var(--font-size-xl);
+                font-weight: var(--font-weight-semibold);
+                color: var(--color-gray-900);
+                margin-bottom: 0.5rem;
+            }
+            
+            .story-event__description {
+                color: var(--color-gray-600);
+                line-height: var(--line-height-relaxed);
+            }
+            
+            .team-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+            }
+            
+            .values-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 2rem;
+            }
+            
+            .value-card {
+                text-align: center;
+                padding: 2rem;
+                background: var(--color-white);
+                border-radius: var(--radius-xl);
+                box-shadow: var(--shadow-md);
+                border: 1px solid var(--color-gray-200);
+                transition: all var(--transition-base);
+            }
+            
+            .value-card:hover {
+                transform: translateY(-8px);
+                box-shadow: var(--shadow-xl);
+                border-color: var(--color-primary);
+            }
+            
+            .value-card__icon {
+                width: 60px;
+                height: 60px;
+                margin: 0 auto 1.5rem;
+                padding: 1rem;
+                border-radius: var(--radius-full);
+                background: var(--gradient-primary);
+                color: var(--color-white);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .value-card__icon svg {
+                width: 28px;
+                height: 28px;
+            }
+            
+            .value-card__title {
+                font-size: var(--font-size-xl);
+                font-weight: var(--font-weight-semibold);
+                color: var(--color-gray-900);
+                margin-bottom: 1rem;
+            }
+            
+            .value-card__description {
+                color: var(--color-gray-600);
+                line-height: var(--line-height-relaxed);
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

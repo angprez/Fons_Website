@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONS Marketing - The Source of Creative Growth</title>
+    <meta name="description" content="FONS Marketing delivers innovative brand strategies, digital campaigns, and creative solutions that drive growth for forward-thinking businesses.">
+    <meta name="keywords" content="marketing, branding, digital campaigns, UX design, analytics, creative agency">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="FONS Marketing - The Source of Creative Growth">
+    <meta property="og:description" content="Innovative marketing solutions that drive creative growth for your business.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fonsmarketing.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="index.html" class="nav__logo">
+                    <div class="logo-3d" id="navLogo"></div>
+                    <span>FONS</span>
+                </a>
+            </div>
+            
+            <div class="nav__menu" id="navMenu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="services.html" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="portfolio.html" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav__actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-toggle__icon"></span>
+                </button>
+                <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero__background">
+                <div class="hero__3d" id="hero3D"></div>
+            </div>
+            
+            <div class="hero__content container">
+                <div class="hero__text">
+                    <h1 class="hero__title">
+                        <span class="hero__title-line">The Source of</span>
+                        <span class="hero__title-line hero__title-line--accent">Creative Growth</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        We transform brands through innovative strategies, compelling design, 
+                        and data-driven campaigns that resonate with your audience.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="contact.html" class="btn btn--primary btn--large">
+                            Get Started
+                            <span class="btn__icon">→</span>
+                        </a>
+                        <a href="portfolio.html" class="btn btn--secondary btn--large">
+                            View Our Work
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__scroll">
+                <div class="scroll-indicator">
+                    <span>Scroll to explore</span>
+                    <div class="scroll-indicator__line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why FONS Section -->
+        <section class="why-fons section" id="whyFons">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Why Choose FONS?</h2>
+                    <p class="section__subtitle">
+                        We combine creative excellence with strategic thinking to deliver 
+                        results that matter to your business.
+                    </p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Proven Results</h3>
+                        <p class="feature-card__description">
+                            Over 200+ successful campaigns with measurable ROI improvements 
+                            averaging 340% growth.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Lightning Fast</h3>
+                        <p class="feature-card__description">
+                            Rapid deployment and iteration cycles that keep you ahead 
+                            of market trends and competition.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Award Winning</h3>
+                        <p class="feature-card__description">
+                            Recognized by industry leaders with 15+ awards for creative 
+                            excellence and innovation.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Expert Team</h3>
+                        <p class="feature-card__description">
+                            Seasoned professionals with 10+ years experience across 
+                            all major industries and markets.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How We Work Section -->
+        <section class="how-we-work section" id="howWeWork">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">How We Work</h2>
+                    <p class="section__subtitle">
+                        Our proven process ensures every project delivers exceptional results 
+                        on time and within budget.
+                    </p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline__item" data-aos="fade-right">
+                        <div class="timeline__marker">
+                            <span class="timeline__number">01</span>
+                        </div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Discovery & Strategy</h3>
+                            <p class="timeline__description">
+                                We dive deep into your business, audience, and goals to create 
+                                a comprehensive strategy that drives results.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline__item" data-aos="fade-left">
+                        <div class="timeline__marker">
+                            <span class="timeline__number">02</span>
+                        </div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Creative Development</h3>
+                            <p class="timeline__description">
+                                Our creative team brings your vision to life with compelling 
+                                designs and engaging content that resonates.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline__item" data-aos="fade-right">
+                        <div class="timeline__marker">
+                            <span class="timeline__number">03</span>
+                        </div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Launch & Optimize</h3>
+                            <p class="timeline__description">
+                                We launch your campaign with precision monitoring and 
+                                continuous optimization for maximum impact.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline__item" data-aos="fade-left">
+                        <div class="timeline__marker">
+                            <span class="timeline__number">04</span>
+                        </div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Measure & Scale</h3>
+                            <p class="timeline__description">
+                                Data-driven insights guide our scaling strategies to amplify 
+                                your success and maximize ROI.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Logos Section -->
+        <section class="clients section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Trusted by Industry Leaders</h2>
+                </div>
+                
+                <div class="client-carousel" id="clientCarousel">
+                    <div class="client-carousel__track">
+                        <div class="client-logo">
+                            <img src="/placeholder.svg?height=60&width=120" alt="Client 1" loading="lazy">
+                        </div>
+                        <div class="client-logo">
+                            <img src="/placeholder.svg?height=60&width=120" alt="Client 2" loading="lazy">
+                        </div>
+                        <div class="client-logo">
+                            <img src="/placeholder.svg?height=60&width=120" alt="Client 3" loading="lazy">
+                        </div>
+                        <div class="client-logo">
+                            <img src="/placeholder.svg?height=60&width=120" alt="Client 4" loading="lazy">
+                        </div>
+                        <div class="client-logo">
+                            <img src="/placeholder.svg?height=60&width=120" alt="Client 5" loading="lazy">
+                        </div>
+                        <div class="client-logo">
+                            <img src="/placeholder.svg?height=60&width=120" alt="Client 6" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Ready to Grow Your Brand?</h2>
+                    <p class="cta__subtitle">
+                        Let's create something extraordinary together. Get in touch to start your journey.
+                    </p>
+                    <div class="cta__actions">
+                        <a href="contact.html" class="btn btn--primary btn--large">
+                            Start Your Project
+                            <span class="btn__icon">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <div class="logo-3d" id="footerLogo"></div>
+                        <span>FONS</span>
+                    </div>
+                    <p class="footer__description">
+                        The source of creative growth for forward-thinking brands.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Services</h4>
+                        <ul class="footer__list">
+                            <li><a href="services.html">Brand Strategy</a></li>
+                            <li><a href="services.html">Digital Campaigns</a></li>
+                            <li><a href="services.html">UX/UI Design</a></li>
+                            <li><a href="services.html">Analytics</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Company</h4>
+                        <ul class="footer__list">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Newsletter</h4>
+                        <p class="footer__newsletter-text">
+                            Stay updated with our latest insights and trends.
+                        </p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                            <button type="submit" class="newsletter-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2024 FONS Marketing. All rights reserved.
+                </p>
+                <div class="footer__legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/3d-animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

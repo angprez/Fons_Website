@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FONS Marketing</title>
+    <meta name="description" content="Get in touch with FONS Marketing. Let's discuss how we can help transform your brand and drive growth for your business.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact Us - FONS Marketing">
+    <meta property="og:description" content="Get in touch with FONS Marketing to discuss your project.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="index.html" class="nav__logo">
+                    <div class="logo-3d" id="navLogo"></div>
+                    <span>FONS</span>
+                </a>
+            </div>
+            
+            <div class="nav__menu" id="navMenu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="services.html" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="portfolio.html" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link active">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav__actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-toggle__icon"></span>
+                </button>
+                <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero hero--contact">
+            <div class="hero__background">
+                <div class="hero__3d" id="contactParticles"></div>
+            </div>
+            
+            <div class="hero__content container">
+                <div class="hero__text">
+                    <h1 class="hero__title">
+                        <span class="hero__title-line">Let's Create</span>
+                        <span class="hero__title-line hero__title-line--accent">Something Amazing</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        Ready to transform your brand and drive growth? Get in touch with our team 
+                        and let's discuss how we can help you achieve your goals.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section section" id="contactSection">
+            <div class="container">
+                <div class="contact-content">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <div class="contact-form-header">
+                            <h2 class="contact-form__title">Start Your Project</h2>
+                            <p class="contact-form__subtitle">
+                                Tell us about your project and we'll get back to you within 24 hours.
+                            </p>
+                        </div>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" class="form-input" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="company">Company Name</label>
+                                <input type="text" id="company" name="company" class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="service">Service Interested In</label>
+                                <select id="service" name="service" class="form-input">
+                                    <option value="">Select a service</option>
+                                    <option value="brand-strategy">Brand Strategy</option>
+                                    <option value="digital-campaigns">Digital Campaigns</option>
+                                    <option value="ux-ui-design">UX/UI Design</option>
+                                    <option value="analytics">Analytics & Insights</option>
+                                    <option value="full-service">Full Service Marketing</option>
+                                    <option value="consultation">Consultation</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="budget">Project Budget</label>
+                                <select id="budget" name="budget" class="form-input">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-5k">Under $5,000</option>
+                                    <option value="5k-15k">$5,000 - $15,000</option>
+                                    <option value="15k-50k">$15,000 - $50,000</option>
+                                    <option value="50k-100k">$50,000 - $100,000</option>
+                                    <option value="over-100k">Over $100,000</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="message">Project Details *</label>
+                                <textarea id="message" name="message" class="form-input form-textarea" rows="5" 
+                                    placeholder="Tell us about your project, goals, and any specific requirements..." required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" class="checkbox-input">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">
+                                        I'd like to receive marketing insights and updates from FONS Marketing
+                                    </span>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary btn--large btn--full">
+                                Send Message
+                                <span class="btn__icon">→</span>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="contact-info__section">
+                            <h3 class="contact-info__title">Get in Touch</h3>
+                            <p class="contact-info__description">
+                                We're here to help you grow your business. Reach out through any of these channels.
+                            </p>
+                        </div>
+                        
+                        <div class="contact-info__section">
+                            <div class="contact-item">
+                                <div class="contact-item__icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-item__content">
+                                    <h4 class="contact-item__title">Office Location</h4>
+                                    <p class="contact-item__details">
+                                        123 Creative Street<br>
+                                        Innovation District<br>
+                                        San Francisco, CA 94105
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-item__icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-item__content">
+                                    <h4 class="contact-item__title">Phone</h4>
+                                    <p class="contact-item__details">
+                                        <a href="tel:+1-555-123-4567">+1 (555) 123-4567</a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-item__icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-item__content">
+                                    <h4 class="contact-item__title">Email</h4>
+                                    <p class="contact-item__details">
+                                        <a href="mailto:hello@fonsmarketing.com">hello@fonsmarketing.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info__section">
+                            <h4 class="contact-info__subtitle">Business Hours</h4>
+                            <div class="business-hours">
+                                <div class="business-hours__item">
+                                    <span class="business-hours__day">Monday - Friday</span>
+                                    <span class="business-hours__time">9:00 AM - 6:00 PM PST</span>
+                                </div>
+                                <div class="business-hours__item">
+                                    <span class="business-hours__day">Saturday</span>
+                                    <span class="business-hours__time">10:00 AM - 4:00 PM PST</span>
+                                </div>
+                                <div class="business-hours__item">
+                                    <span class="business-hours__day">Sunday</span>
+                                    <span class="business-hours__time">Closed</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info__section">
+                            <h4 class="contact-info__subtitle">Follow Us</h4>
+                            <div class="contact-social">
+                                <a href="#" class="contact-social__link" aria-label="Twitter">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="contact-social__link" aria-label="LinkedIn">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="contact-social__link" aria-label="Instagram">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="contact-social__link" aria-label="Dribbble">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="contact-faq section" id="contactFaq">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Frequently Asked Questions</h2>
+                    <p class="section__subtitle">
+                        Quick answers to common questions about working with us.
+                    </p>
+                </div>
+                
+                <div class="faq-grid">
+                    <div class="faq-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="faq-card__question">How quickly can we start working together?</h3>
+                        <p class="faq-card__answer">
+                            We can typically begin new projects within 1-2 weeks of signing the agreement. 
+                            For urgent projects, we offer expedited onboarding.
+                        </p>
+                    </div>
+                    
+                    <div class="faq-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="faq-card__question">What information do you need to get started?</h3>
+                        <p class="faq-card__answer">
+                            We'll need details about your business goals, target audience, current marketing efforts, 
+                            budget, and timeline. We'll guide you through this during our initial consultation.
+                        </p>
+                    </div>
+                    
+                    <div class="faq-card" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="faq-card__question">Do you work with businesses outside the US?</h3>
+                        <p class="faq-card__answer">
+                            Yes! We work with clients globally and have experience with international markets. 
+                            We can accommodate different time zones and cultural considerations.
+                        </p>
+                    </div>
+                    
+                    <div class="faq-card" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="faq-card__question">What's your typical project timeline?</h3>
+                        <p class="faq-card__answer">
+                            Project timelines vary based on scope. Brand strategy projects typically take 4-6 weeks, 
+                            while comprehensive campaigns can take 8-12 weeks from start to launch.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <div class="logo-3d" id="footerLogo"></div>
+                        <span>FONS</span>
+                    </div>
+                    <p class="footer__description">
+                        The source of creative growth for forward-thinking brands.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Services</h4>
+                        <ul class="footer__list">
+                            <li><a href="services.html">Brand Strategy</a></li>
+                            <li><a href="services.html">Digital Campaigns</a></li>
+                            <li><a href="services.html">UX/UI Design</a></li>
+                            <li><a href="services.html">Analytics</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Company</h4>
+                        <ul class="footer__list">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Newsletter</h4>
+                        <p class="footer__newsletter-text">
+                            Stay updated with our latest insights and trends.
+                        </p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                            <button type="submit" class="newsletter-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2024 FONS Marketing. All rights reserved.
+                </p>
+                <div class="footer__legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/3d-animations.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        // Contact page specific styles
+        const style = document.createElement('style');
+        style.textContent = `
+            .hero--contact {
+                min-height: 60vh;
+            }
+            
+            .contact-content {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 4rem;
+                align-items: start;
+            }
+            
+            @media (max-width: 1024px) {
+                .contact-content {
+                    grid-template-columns: 1fr;
+                    gap: 3rem;
+                }
+            }
+            
+            .contact-form-container {
+                background: var(--color-white);
+                border-radius: var(--radius-2xl);
+                padding: 2.5rem;
+                box-shadow: var(--shadow-xl);
+                border: 1px solid var(--color-gray-200);
+            }
+            
+            .contact-form-header {
+                margin-bottom: 2rem;
+            }
+            
+            .contact-form__title {
+                font-family: var(--font-family-display);
+                font-size: var(--font-size-2xl);
+                font-weight: var(--font-weight-bold);
+                color: var(--color-gray-900);
+                margin-bottom: 0.5rem;
+            }
+            
+            .contact-form__subtitle {
+                color: var(--color-gray-600);
+                line-height: var(--line-height-relaxed);
+            }
+            
+            .form-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+            
+            @media (max-width: 640px) {
+                .form-row {
+                    grid-template-columns: 1fr;
+                }
+            }
+            
+            .checkbox-label {
+                display: flex;
+                align-items: flex-start;
+                gap: 0.75rem;
+                cursor: pointer;
+                line-height: var(--line-height-relaxed);
+            }
+            
+            .checkbox-input {
+                position: absolute;
+                opacity: 0;
+                pointer-events: none;
+            }
+            
+            .checkbox-custom {
+                width: 20px;
+                height: 20px;
+                border: 2px solid var(--color-gray-300);
+                border-radius: var(--radius-sm);
+                background: var(--color-white);
+                position: relative;
+                flex-shrink: 0;
+                transition: all var(--transition-base);
+            }
+            
+            .checkbox-input:checked + .checkbox-custom {
+                background: var(--color-primary);
+                border-color: var(--color-primary);
+            }
+            
+            .checkbox-input:checked + .checkbox-custom::after {
+                content: '✓';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: var(--color-white);
+                font-size: 12px;
+                font-weight: bold;
+            }
+            
+            .checkbox-text {
+                color: var(--color-gray-700);
+                font-size: var(--font-size-sm);
+            }
+            
+            .btn--full {
+                width: 100%;
+            }
+            
+            .contact-info {
+                background: var(--color-gray-50);
+                border-radius: var(--radius-2xl);
+                padding: 2rem;
+            }
+            
+            .contact-info__section {
+                margin-bottom: 2rem;
+            }
+            
+            .contact-info__section:last-child {
+                margin-bottom: 0;
+            }
+            
+            .contact-info__title {
+                font-size: var(--font-size-xl);
+                font-weight: var(--font-weight-semibold);
+                color: var(--color-gray-900);
+                margin-bottom: 0.5rem;
+            }
+            
+            .contact-info__subtitle {
+                font-size: var(--font-size-lg);
+                font-weight: var(--font-weight-medium);
+                color: var(--color-gray-900);
+                margin-bottom: 1rem;
+            }
+            
+            .contact-info__description {
+                color: var(--color-gray-600);
+                line-height: var(--line-height-relaxed);
+            }
+            
+            .contact-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 1rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .contact-item:last-child {
+                margin-bottom: 0;
+            }
+            
+            .contact-item__icon {
+                width: 40px;
+                height: 40px;
+                border-radius: var(--radius-lg);
+                background: var(--gradient-primary);
+                color: var(--color-white);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+            
+            .contact-item__icon svg {
+                width: 20px;
+                height: 20px;
+            }
+            
+            .contact-item__title {
+                font-weight: var(--font-weight-medium);
+                color: var(--color-gray-900);
+                margin-bottom: 0.25rem;
+            }
+            
+            .contact-item__details {
+                color: var(--color-gray-600);
+                line-height: var(--line-height-relaxed);
+            }
+            
+            .contact-item__details a {
+                color: var(--color-primary);
+                text-decoration: none;
+                transition: color var(--transition-base);
+            }
+            
+            .contact-item__details a:hover {
+                color: var(--color-primary-dark);
+            }
+            
+            .business-hours__item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.5rem 0;
+                border-bottom: 1px solid var(--color-gray-200);
+            }
+            
+            .business-hours__item:last-child {
+                border-bottom: none;
+            }
+            
+            .business-hours__day {
+                color: var(--color-gray-700);
+                font-weight: var(--font-weight-medium);
+            }
+            
+            .business-hours__time {
+                color: var(--color-gray-600);
+            }
+            
+            .contact-social {
+                display: flex;
+                gap: 0.75rem;
+            }
+            
+            .contact-social__link {
+                width: 40px;
+                height: 40px;
+                border-radius: var(--radius-lg);
+                background: var(--color-white);
+                color: var(--color-gray-600);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                transition: all var(--transition-base);
+                border: 1px solid var(--color-gray-200);
+            }
+            
+            .contact-social__link:hover {
+                background: var(--color-primary);
+                color: var(--color-white);
+                border-color: var(--color-primary);
+                transform: translateY(-2px);
+            }
+            
+            .contact-social__link svg {
+                width: 18px;
+                height: 18px;
+            }
+            
+            .faq-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 1.5rem;
+            }
+            
+            .faq-card {
+                background: var(--color-white);
+                border-radius: var(--radius-xl);
+                padding: 1.5rem;
+                box-shadow: var(--shadow-md);
+                border: 1px solid var(--color-gray-200);
+                transition: all var(--transition-base);
+            }
+            
+            .faq-card:hover {
+                transform: translateY(-4px);
+                box-shadow: var(--shadow-lg);
+            }
+            
+            .faq-card__question {
+                font-size: var(--font-size-lg);
+                font-weight: var(--font-weight-semibold);
+                color: var(--color-gray-900);
+                margin-bottom: 0.75rem;
+            }
+            
+            .faq-card__answer {
+                color: var(--color-gray-600);
+                line-height: var(--line-height-relaxed);
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - FONS Marketing</title>
+    <meta name="description" content="Explore our portfolio of successful marketing campaigns and creative projects. See how FONS Marketing has helped brands achieve remarkable growth.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Portfolio - FONS Marketing">
+    <meta property="og:description" content="Explore our portfolio of successful marketing campaigns and creative projects.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="index.html" class="nav__logo">
+                    <div class="logo-3d" id="navLogo"></div>
+                    <span>FONS</span>
+                </a>
+            </div>
+            
+            <div class="nav__menu" id="navMenu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="services.html" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="portfolio.html" class="nav__link active">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav__actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-toggle__icon"></span>
+                </button>
+                <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero hero--portfolio">
+            <div class="hero__background">
+                <div class="hero__3d" id="portfolioHero3D"></div>
+            </div>
+            
+            <div class="hero__content container">
+                <div class="hero__text">
+                    <h1 class="hero__title">
+                        <span class="hero__title-line">Our Creative</span>
+                        <span class="hero__title-line hero__title-line--accent">Portfolio</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        Discover the innovative campaigns and creative solutions that have 
+                        driven remarkable growth for our clients across various industries.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="portfolio-filters section-sm">
+            <div class="container">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All Projects</button>
+                    <button class="filter-tab" data-filter="branding">Branding</button>
+                    <button class="filter-tab" data-filter="digital">Digital Campaigns</button>
+                    <button class="filter-tab" data-filter="web">Web Design</button>
+                    <button class="filter-tab" data-filter="mobile">Mobile Apps</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid Section -->
+        <section class="portfolio-grid section" id="portfolioGrid">
+            <div class="container">
+                <div class="portfolio-masonry">
+                    <div class="portfolio-card" data-filter="branding digital" data-aos="fade-up" data-aos-delay="100">
+                        <div class="portfolio-card__image">
+                            <img src="/placeholder.svg?height=300&width=400" alt="TechFlow Rebranding" loading="lazy">
+                            <div class="portfolio-card__overlay">
+                                <div class="portfolio-card__overlay-content">
+                                    <h3 class="portfolio-card__overlay-title">TechFlow Rebranding</h3>
+                                    <p class="portfolio-card__overlay-category">Branding & Digital</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <span class="portfolio-card__category">Branding & Digital</span>
+                            <h3 class="portfolio-card__title">TechFlow Rebranding</h3>
+                            <p class="portfolio-card__description">
+                                Complete brand transformation that increased brand recognition by 280% 
+                                and drove 150% growth in qualified leads.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card" data-filter="web digital" data-aos="fade-up" data-aos-delay="200">
+                        <div class="portfolio-card__image">
+                            <img src="/placeholder.svg?height=400&width=400" alt="EcoVibe E-commerce" loading="lazy">
+                            <div class="portfolio-card__overlay">
+                                <div class="portfolio-card__overlay-content">
+                                    <h3 class="portfolio-card__overlay-title">EcoVibe E-commerce</h3>
+                                    <p class="portfolio-card__overlay-category">Web Design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <span class="portfolio-card__category">Web Design</span>
+                            <h3 class="portfolio-card__title">EcoVibe E-commerce</h3>
+                            <p class="portfolio-card__description">
+                                Sustainable fashion e-commerce platform with 40% conversion rate improvement 
+                                and seamless user experience.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card" data-filter="mobile digital" data-aos="fade-up" data-aos-delay="300">
+                        <div class="portfolio-card__image">
+                            <img src="/placeholder.svg?height=350&width=400" alt="FitTrack Mobile App" loading="lazy">
+                            <div class="portfolio-card__overlay">
+                                <div class="portfolio-card__overlay-content">
+                                    <h3 class="portfolio-card__overlay-title">FitTrack Mobile App</h3>
+                                    <p class="portfolio-card__overlay-category">Mobile App</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <span class="portfolio-card__category">Mobile App</span>
+                            <h3 class="portfolio-card__title">FitTrack Mobile App</h3>
+                            <p class="portfolio-card__description">
+                                Fitness tracking app with AI-powered recommendations, achieving 
+                                500K+ downloads in the first quarter.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card" data-filter="branding" data-aos="fade-up" data-aos-delay="400">
+                        <div class="portfolio-card__image">
+                            <img src="/placeholder.svg?height=280&width=400" alt="Luxe Hotels Identity" loading="lazy">
+                            <div class="portfolio-card__overlay">
+                                <div class="portfolio-card__overlay-content">
+                                    <h3 class="portfolio-card__overlay-title">Luxe Hotels Identity</h3>
+                                    <p class="portfolio-card__overlay-category">Branding</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <span class="portfolio-card__category">Branding</span>
+                            <h3 class="portfolio-card__title">Luxe Hotels Identity</h3>
+                            <p class="portfolio-card__description">
+                                Sophisticated brand identity for luxury hotel chain, elevating 
+                                brand perception and increasing bookings by 65%.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card" data-filter="digital web" data-aos="fade-up" data-aos-delay="500">
+                        <div class="portfolio-card__image">
+                            <img src="/placeholder.svg?height=320&width=400" alt="FinanceFlow Dashboard" loading="lazy">
+                            <div class="portfolio-card__overlay">
+                                <div class="portfolio-card__overlay-content">
+                                    <h3 class="portfolio-card__overlay-title">FinanceFlow Dashboard</h3>
+                                    <p class="portfolio-card__overlay-category">Web Design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <span class="portfolio-card__category">Web Design</span>
+                            <h3 class="portfolio-card__title">FinanceFlow Dashboard</h3>
+                            <p class="portfolio-card__description">
+                                Intuitive financial dashboard that simplified complex data visualization 
+                                and improved user engagement by 200%.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card" data-filter="branding digital" data-aos="fade-up" data-aos-delay="600">
+                        <div class="portfolio-card__image">
+                            <img src="/placeholder.svg?height=360&width=400" alt="GreenTech Campaign" loading="lazy">
+                            <div class="portfolio-card__overlay">
+                                <div class="portfolio-card__overlay-content">
+                                    <h3 class="portfolio-card__overlay-title">GreenTech Campaign</h3>
+                                    <p class="portfolio-card__overlay-category">Digital Campaign</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <span class="portfolio-card__category">Digital Campaign</span>
+                            <h3 class="portfolio-card__title">GreenTech Campaign</h3>
+                            <p class="portfolio-card__description">
+                                Sustainability-focused campaign that generated 2M+ impressions 
+                                and positioned client as industry thought leader.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card" data-filter="mobile" data-aos="fade-up" data-aos-delay="700">
+                        <div class="portfolio-card__image">
+                            <img src="/placeholder.svg?height=340&width=400" alt="FoodieFind App" loading="lazy">
+                            <div class="portfolio-card__overlay">
+                                <div class="portfolio-card__overlay-content">
+                                    <h3 class="portfolio-card__overlay-title">FoodieFind App</h3>
+                                    <p class="portfolio-card__overlay-category">Mobile App</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <span class="portfolio-card__category">Mobile App</span>
+                            <h3 class="portfolio-card__title">FoodieFind App</h3>
+                            <p class="portfolio-card__description">
+                                Restaurant discovery app with social features, reaching 1M+ users 
+                                and 4.8-star rating on app stores.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card" data-filter="web branding" data-aos="fade-up" data-aos-delay="800">
+                        <div class="portfolio-card__image">
+                            <img src="/placeholder.svg?height=300&width=400" alt="MedCare Platform" loading="lazy">
+                            <div class="portfolio-card__overlay">
+                                <div class="portfolio-card__overlay-content">
+                                    <h3 class="portfolio-card__overlay-title">MedCare Platform</h3>
+                                    <p class="portfolio-card__overlay-category">Healthcare</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <span class="portfolio-card__category">Healthcare</span>
+                            <h3 class="portfolio-card__title">MedCare Platform</h3>
+                            <p class="portfolio-card__description">
+                                Telemedicine platform design that improved patient experience 
+                                and increased consultation bookings by 180%.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Study Highlight -->
+        <section class="case-study section" id="caseStudy">
+            <div class="container">
+                <div class="case-study__content">
+                    <div class="case-study__text">
+                        <span class="case-study__label">Featured Case Study</span>
+                        <h2 class="case-study__title">TechFlow: From Startup to Industry Leader</h2>
+                        <p class="case-study__description">
+                            When TechFlow approached us, they were a promising startup with great technology 
+                            but struggled with brand recognition. Through our comprehensive rebranding and 
+                            digital marketing strategy, we transformed them into an industry leader.
+                        </p>
+                        
+                        <div class="case-study__metrics">
+                            <div class="metric">
+                                <div class="metric__number">280%</div>
+                                <div class="metric__label">Brand Recognition Increase</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric__number">150%</div>
+                                <div class="metric__label">Lead Generation Growth</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric__number">$2.5M</div>
+                                <div class="metric__label">Revenue Increase</div>
+                            </div>
+                        </div>
+                        
+                        <div class="case-study__actions">
+                            <a href="#" class="btn btn--primary">Read Full Case Study</a>
+                            <a href="contact.html" class="btn btn--outline">Start Your Project</a>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study__visual">
+                        <div class="case-study__image">
+                            <img src="/placeholder.svg?height=400&width=600" alt="TechFlow Case Study" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section" id="testimonials">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">What Our Clients Say</h2>
+                    <p class="section__subtitle">
+                        Hear from the brands we've helped transform and grow.
+                    </p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-card__content">
+                            <div class="testimonial-card__quote">
+                                "FONS Marketing completely transformed our brand. Their strategic approach 
+                                and creative execution exceeded all our expectations. We saw immediate 
+                                results and continue to see growth month over month."
+                            </div>
+                            <div class="testimonial-card__author">
+                                <div class="testimonial-card__avatar">
+                                    <img src="/placeholder.svg?height=60&width=60" alt="Sarah Johnson" loading="lazy">
+                                </div>
+                                <div class="testimonial-card__info">
+                                    <div class="testimonial-card__name">Sarah Johnson</div>
+                                    <div class="testimonial-card__role">CEO, TechFlow</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-card__content">
+                            <div class="testimonial-card__quote">
+                                "The team at FONS is incredibly talented and professional. They took the time 
+                                to understand our business and delivered a campaign that perfectly captured 
+                                our brand essence. Highly recommended!"
+                            </div>
+                            <div class="testimonial-card__author">
+                                <div class="testimonial-card__avatar">
+                                    <img src="/placeholder.svg?height=60&width=60" alt="Michael Chen" loading="lazy">
+                                </div>
+                                <div class="testimonial-card__info">
+                                    <div class="testimonial-card__name">Michael Chen</div>
+                                    <div class="testimonial-card__role">Marketing Director, EcoVibe</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-card__content">
+                            <div class="testimonial-card__quote">
+                                "Working with FONS has been a game-changer for our business. Their data-driven 
+                                approach and creative solutions have helped us achieve results we never 
+                                thought possible."
+                            </div>
+                            <div class="testimonial-card__author">
+                                <div class="testimonial-card__avatar">
+                                    <img src="/placeholder.svg?height=60&width=60" alt="Emma Rodriguez" loading="lazy">
+                                </div>
+                                <div class="testimonial-card__info">
+                                    <div class="testimonial-card__name">Emma Rodriguez</div>
+                                    <div class="testimonial-card__role">Founder, Luxe Hotels</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Ready to Create Your Success Story?</h2>
+                    <p class="cta__subtitle">
+                        Let's discuss how we can help your brand achieve remarkable growth. 
+                        Get in touch to start your transformation journey.
+                    </p>
+                    <div class="cta__actions">
+                        <a href="contact.html" class="btn btn--primary btn--large">
+                            Start Your Project
+                            <span class="btn__icon">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <div class="logo-3d" id="footerLogo"></div>
+                        <span>FONS</span>
+                    </div>
+                    <p class="footer__description">
+                        The source of creative growth for forward-thinking brands.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Services</h4>
+                        <ul class="footer__list">
+                            <li><a href="services.html">Brand Strategy</a></li>
+                            <li><a href="services.html">Digital Campaigns</a></li>
+                            <li><a href="services.html">UX/UI Design</a></li>
+                            <li><a href="services.html">Analytics</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Company</h4>
+                        <ul class="footer__list">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4 class="footer__title">Newsletter</h4>
+                        <p class="footer__newsletter-text">
+                            Stay updated with our latest insights and trends.
+                        </p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                            <button type="submit" class="newsletter-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2024 FONS Marketing. All rights reserved.
+                </p>
+                <div class="footer__legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/3d-animations.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        // Portfolio page specific styles
+        const style = document.createElement('style');
+        style.textContent = `
+            .hero--portfolio {
+                min-height: 60vh;
+            }
+            
+            .section-sm {
+                padding: 2rem 0;
+            }
+            
+            .portfolio-masonry {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 2rem;
+                grid-auto-rows: masonry;
+            }
+            
+            @supports not (grid-template-rows: masonry) {
+                .portfolio-masonry {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 2rem;
+                }
+                
+                .portfolio-card {
+                    flex: 1 1 350px;
+                }
+            }
+            
+            .case-study__content {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 4rem;
+                align-items: center;
+            }
+            
+            @media (max-width: 768px) {
+                .case-study__content {
+                    grid-template-columns: 1fr;
+                    gap: 2rem;
+                }
+            }
+            
+            .case-study__label {
+                display: inline-block;
+                padding: 0.5rem 1rem;
+                background: var(--color-lavender-light);
+                color: var(--color-primary);
+                border-radius: var(--radius-full);
+                font-size: var(--font-size-sm);
+                font-weight: var(--font-weight-medium);
+                margin-bottom: 1rem;
+            }
+            
+            .case-study__title {
+                font-family: var(--font-family-display);
+                font-size: var(--font-size-3xl);
+                font-weight: var(--font-weight-bold);
+                color: var(--color-gray-900);
+                margin-bottom: 1rem;
+            }
+            
+            .case-study__description {
+                color: var(--color-gray-600);
+                line-height: var(--line-height-relaxed);
+                margin-bottom: 2rem;
+            }
+            
+            .case-study__metrics {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
+                margin-bottom: 2rem;
+            }
+            
+            .metric {
+                text-align: center;
+                padding: 1rem;
+                background: var(--color-gray-50);
+                border-radius: var(--radius-lg);
+            }
+            
+            .metric__number {
+                font-size: var(--font-size-2xl);
+                font-weight: var(--font-weight-bold);
+                color: var(--color-primary);
+                margin-bottom: 0.5rem;
+            }
+            
+            .metric__label {
+                font-size: var(--font-size-sm);
+                color: var(--color-gray-600);
+            }
+            
+            .case-study__actions {
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+            
+            .case-study__image {
+                border-radius: var(--radius-xl);
+                overflow: hidden;
+                box-shadow: var(--shadow-xl);
+            }
+            
+            .case-study__image img {
+                width: 100%;
+                height: auto;
+            }
+            
+            .testimonials-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 2rem;
+            }
+            
+            .testimonial-card {
+                background: var(--color-white);
+                border-radius: var(--radius-xl);
+                padding: 2rem;
+                box-shadow: var(--shadow-md);
+                border: 1px solid var(--color-gray-200);
+                transition: all var(--transition-base);
+            }
+            
+            .testimonial-card:hover {
+                transform: translateY(-4px);
+                box-shadow: var(--shadow-xl);
+            }
+            
+            .testimonial-card__quote {
+                font-size: var(--font-size-lg);
+                line-height: var(--line-height-relaxed);
+                color: var(--color-gray-700);
+                margin-bottom: 1.5rem;
+                position: relative;
+            }
+            
+            .testimonial-card__quote::before {
+                content: '"';
+                font-size: 4rem;
+                color: var(--color-primary);
+                position: absolute;
+                top: -1rem;
+                left: -0.5rem;
+                font-family: var(--font-family-display);
+            }
+            
+            .testimonial-card__author {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            .testimonial-card__avatar {
+                width: 60px;
+                height: 60px;
+                border-radius: var(--radius-full);
+                overflow: hidden;
+                flex-shrink: 0;
+            }
+            
+            .testimonial-card__avatar img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+            .testimonial-card__name {
+                font-weight: var(--font-weight-semibold);
+                color: var(--color-gray-900);
+                margin-bottom: 0.25rem;
+            }
+            
+            .testimonial-card__role {
+                font-size: var(--font-size-sm);
+                color: var(--color-gray-600);
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
