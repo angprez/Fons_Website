@@ -274,10 +274,6 @@ body {
   font-size: var(--font-size-xl);
 }
 
-.logo-3d {
-  width: 32px;
-  height: 32px;
-}
 
 .nav__menu {
   display: none;
